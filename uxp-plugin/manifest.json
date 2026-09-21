@@ -1,0 +1,47 @@
+{
+  "id": "com.adobe-mcp.plugin",
+  "name": "Adobe MCP",
+  "version": "0.1.0",
+  "main": "index.html",
+  "manifestVersion": 5,
+  "host": [
+    {
+      "app": "PS",
+      "minVersion": "23.3.0"
+    }
+  ],
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "adobeMcpPanel",
+      "label": {
+        "default": "Adobe MCP"
+      },
+      "minimumSize": {
+        "width": 230,
+        "height": 120
+      },
+      "maximumSize": {
+        "width": 2000,
+        "height": 2000
+      },
+      "preferredDockedSize": {
+        "width": 230,
+        "height": 200
+      },
+      "preferredFloatingSize": {
+        "width": 230,
+        "height": 200
+      }
+    }
+  ],
+  "requiredPermissions": {
+    "network": {
+      "domains": [
+        "ws://127.0.0.1:3001",
+        "ws://localhost:3001"
+      ]
+    },
+    "localFileSystem": "fullAccess"
+  }
+}

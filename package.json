@@ -1,0 +1,22 @@
+{
+  "name": "adobe-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "bridge",
+    "mcp-server"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean",
+    "dev:bridge": "npm run dev -w bridge",
+    "dev:mcp": "npm run dev -w mcp-server"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

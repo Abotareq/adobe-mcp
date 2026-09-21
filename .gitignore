@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.tsbuildinfo
+exports/
+council-report-*.html
+council-transcript-*.md
+graphify-out/

@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./shared" },
+    { "path": "./bridge" },
+    { "path": "./mcp-server" }
+  ]
+}
